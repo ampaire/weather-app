@@ -1,42 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <link href="./style.css" rel="stylesheet" />
-  <title>Weather App</title>
-</head>
-<body>
-  <nav id="navbar" class="navbar d-flex justify-content-center mb-4">
-    <div class="navbar-item">
-      <div>
-        <h3 class="title text-center">Weather APP</h3>
-      </div>
-    </div>
-  </nav>
-  <div class="section-item rows ml-3  d-flex justify-content-center">
-      <div class="row">
-        <div class="needed d-flex justify-content-center">
-          <div class="control">
-            <input id="cityInput" class="input" type="text" placeholder="Enter city..." autofocus= "true">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link href="./style.css" rel="stylesheet" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="section">
+      <nav id="navbar" class="navbar d-flex justify-content-center mb-4">
+        <div class="navbar-item">
+          <div>
+            <h3 class="title text-center">Weather APP</h3>
           </div>
-          <button class="control btn-success button">
-            <a id="city">Search</a>
-          </button>
-        </div>	
-        <div class="field">
-          <button id="degrees" class=" button btn-primary btn-round">Celsius</button>
-          <button id="clearpage" class="button btn-danger btn-round">Clear All</button>
+        </div>
+      </nav>
+      <div class="section-item rows ml-3  d-flex justify-content-center">
+        <div class="row">
+          <div class="needed d-flex justify-content-center">
+            <div class="control">
+              <input
+                id="cityInput"
+                class="input mb-3"
+                type="text"
+                placeholder="Enter city..."
+              />
+            </div>
+            <button class="control btn-success mt-4 button">
+              <a id="city">Search</a>
+            </button>
+          </div>
         </div>
       </div>
-    </div>	
-    <div id="weather-forecast" class="section-item"></div>
-</body>
+      <div id="weather-forecast" class="section-item weather mt-4 p-4">
+        <div class="field">
+          <div class="location"></div>
+          <div class="temperature"></div>
+          <div class="icon"></div>
+          <div class="more-info">
+            <p></p>
+            <p></p>
+          </div>
+          <div class="change">
+            <button id="degrees" class=" button btn-success btn-round">
+              Switch to °F
+            </button>
+            <button id="kelvin" class="btn-temp  btn-success btn-round button">
+              Switch to °K
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./main.js"></script>
 </html>
