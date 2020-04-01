@@ -18,7 +18,7 @@ body {
   flex-direction: column;
 }
 
-.input {
+.inputCity {
   border-radius: 16px 0px 16px 0px;
   padding: 14px;
   width: 20vw;
@@ -28,12 +28,12 @@ body {
   background-color: rgba(236, 235, 234, 0.4);
 }
 
-.input:focus {
+.inputCity:focus {
   background-color: cornsilk;
 }
 
 .button {
-  background: transparent;
+  background: black;
   margin: 2px;
   padding: 7px;
   outline: none;
@@ -47,17 +47,42 @@ body {
   align-items: center;
 }
 
-.weather {
-  margin-top: 12%;
-  margin: 0 auto;
-  border-radius: 20px;
-  background-color: crimson;
-  width: 30vw;
-  height: 60vh;
+#weather-forecast {
+  display: none;
+  padding:3%;
+  justify-content: center;
 }
 
+#weather-forecast.show {
+  margin-top: 12%;
+  display: flex;
+  margin: 0 auto;
+  border-radius: 20px;
+  width: 30vw;
+  height: 60vh;
+  background-color: rgb(247, 236, 232);
+}
+
+.main-temp {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-shadow: yellow 10px;
+}
 .change {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.weather-icon {
+  width: 5vw;
+  background-color: cornflowerblue;
+}
+
+.location {
+  font-family: fantasy;
+  font-size: 1.32rem;
+  text-align: center;
+  font-weight: 600;
 }
