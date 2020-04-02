@@ -39,7 +39,7 @@ export default (data, tempF = null) => {
   currTemp.innerHTML = `<i class='fa fa-thermometer-three-quarters'></i>${Math.round(
     data.temp,
   )}°C`;
-  weatherImg.src = `http://openweathermap.org/img/wn/${data.icon}@2x.png`;
+  weatherImg.src = `https://openweathermap.org/img/wn/${data.icon}@2x.png`;
   desc.innerHTML = `
   <p> Click on the button to toggle between the temperatures</p>
   `;
@@ -63,9 +63,9 @@ export default (data, tempF = null) => {
 
 export const selectImage = (cityName) => {
   const script = document.createElement('script');
-  script.src = `https://api.flickr.com/services/feeds/photos_public.gne?format=json&jsoncallback=cb&tags=${cityName}`;
+  script.src = `https://api.flickr.com/services/feeds/photos_public.gne?format=json&jsoncallback=abc&tags=${cityName}`;
   document.head.appendChild(script);
-  window.cb = function (data) {
+  window.abc = abc(data) {
     const body = document.querySelector('body');
     body.style.background = `url('${data.items[3].media.m}') no-repeat`;
     body.style.backgroundSize = 'cover';
