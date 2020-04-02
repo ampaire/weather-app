@@ -11,8 +11,8 @@ searchForm.addEventListener('submit', event => {
 
   let data = {};
   const currentCity = checkCity.value;
-  const metricURL = `http://api.openweathermap.org/data/2.5/weather?q=${currentCity}&appid=${apiKey}&units=metric`;
-  const fehrenhitURL = `http://api.openweathermap.org/data/2.5/weather?q=${currentCity}&appid=${apiKey}&units=imperial`;
+  const metricURL = `https://api.openweathermap.org/data/2.5/weather?q=${currentCity}&appid=${apiKey}&units=metric`;
+  const fehrenhitURL = `https://api.openweathermap.org/data/2.5/weather?q=${currentCity}&appid=${apiKey}&units=imperial`;
   fetch(metricURL, { mode: 'cors' })
     .then(response => response.json())
     .then(json => parseJSON(json))
@@ -23,7 +23,7 @@ searchForm.addEventListener('submit', event => {
     .then(dataImperial => dataImperial.temp)
     .then(tempF => updateDOM(data, tempF))
     .catch(() => {
-      errorMessage.textContent = 'Couldn\'t fetch weather for this city 😩.';
+      errorMessage.textContent = 'I Couldn\'t fetch weather for this city 😩.';
     });
   errorMessage.textContent = '';
   searchForm.reset();

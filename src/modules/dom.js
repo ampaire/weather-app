@@ -14,6 +14,15 @@ const d = document.getElementById('degrees');
 
 export default (data, tempF = null) => {
   const list = document.createElement('li');
+  list.classList.add('city');
+  currCity[0].innerHTML = data.name;
+  currCity[1].innerHTML = data.country;
+  currDate.innerHTML = new Date();
+  currTemp.innerHTML = `<i class='fa fa-thermometer-three-quarters'></i>${Math.round(
+    data.temp,
+  )}°C`;
+  weatherImg.src = `https://openweathermap.org/img/wn/${data.icon}@2x.png`;
+  desc.innerHTML = data.description;
   let currTempF = false;
   const toggleTempF = (el, cc, tempInfo) => {
     const cel = `<i class='fa fa-thermometer-three-quarters'></i>${Math.round(
@@ -32,17 +41,6 @@ export default (data, tempF = null) => {
       currTempF = true;
     }
   };
-  list.classList.add('city');
-  currCity[0].innerHTML = data.name;
-  currCity[1].innerHTML = data.country;
-  currDate.innerHTML = new Date();
-  currTemp.innerHTML = `<i class='fa fa-thermometer-three-quarters'></i>${Math.round(
-    data.temp,
-  )}°C`;
-  weatherImg.src = `http://openweathermap.org/img/wn/${data.icon}@2x.png`;
-  desc.innerHTML = `
-  <p> Click on the button to toggle between the temperatures</p>
-  `;
   moreAbt[0].innerHTML = `
   <span class='b-feel'>Feels Like</span>
   ${Math.round(data.feelsLike)}°C
@@ -63,7 +61,7 @@ export default (data, tempF = null) => {
 
 export const selectImage = (cityName) => {
   const script = document.createElement('script');
-  script.src = `http://api.flickr.com/services/feeds/photos_public.gne?format=json&jsoncallback=abc&tags=${cityName}`;
+  script.src = `https://api.flickr.com/services/feeds/photos_public.gne?format=json&jsoncallback=abc&tags=${cityName}`;
   document.head.appendChild(script);
   window.abc = function (data) {
     const body = document.querySelector('body');
