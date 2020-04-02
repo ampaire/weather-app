@@ -11,7 +11,7 @@ The main purpose of this project is to create a weather app where users type in 
 - An image of the city that the user checked for is returned in the background
 
 ## Live link
-[Weather App](https://rawcdn.githack.com/ampaire/weather-app/c7f6514c1c9ecc798418f4c115e4ec49e7dfbb49/dist/index.html)
+[Weather App](https://rawcdn.githack.com/ampaire/weather-app/7a6d585b71809de16913bcff25cbf0c53a53fcc7/dist/index.html)
 
 ## Built with
 - Html and Css
