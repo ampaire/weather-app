@@ -1,4 +1,4 @@
-# weather-app [Microverse](https://www.microverse.org/)
+# weather-app - [Microverse Projects](https://www.microverse.org/)
 
 ![screenshot](docs/weather.png)
 
