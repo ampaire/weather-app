@@ -21,7 +21,8 @@ body {
 .section {
   height: inherit;
   background-color: rgba(0, 0, 0, 0.6);
-  position: relative;
+  margin: 0 3%;
+  border-radius: 5%;
 }
 
 .section {
