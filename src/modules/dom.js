@@ -60,3 +60,15 @@ export default (data, tempF = null) => {
   });
   displayCity.className = 'show';
 };
+
+export const selectImage = (city, id) => {
+  const script = document.createElement('script');
+  script.src = `https://api.flickr.com/services/feeds/photos_public.gne?format=json&jsoncallback=abc.json()&api_key=fd37a7c72f9fa19176e3614c3d642a3f&tags=${city}&[0]`;
+  document.head.appendChild(script);
+  const photoID = id;
+  window.abc = function abc(data) {
+    const el = `cityPic${photoID}`;
+    const image = document.getElementById(el);
+    image.setAttribute('src', data.items[0].media.m);
+  };
+};

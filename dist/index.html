@@ -38,35 +38,42 @@
         <div class="row">
           <div class="needed d-flex justify-content-center">
             <form class="control" id="form-control">
-              <input id="cityInput" class="inputCity mb-3" type="text" placeholder="Enter city..."/>
-        
-            <button type ="submit" class="check-city btn-success mt-4 button"><a id="city">CHECK WEATHER</a></button>
-            <span id="warn" class="err-city"></span>
+              <input
+                id="cityInput"
+                class="inputCity mb-3"
+                type="text"
+                placeholder="Enter city..."
+              />
+
+              <button type="submit" class="check-city btn-success mt-4 button">
+                <a id="city">CHECK WEATHER</a>
+              </button>
+              <span id="warn" class="err-city"></span>
             </form>
           </div>
         </div>
       </div>
       <div id="weather-forecast" class="section-item weather mt-4 p-4">
         <div class="field" id="temp-field">
-          <div class="location">
+          <div class="location" id="term">
             <span class="city-name"></span>
             <span class="country-name"></span>
           </div>
           <p class="main-temp"></p>
           <div class="date"></div>
           <div class="temperature">
-             <p class="weather-status"></p>
-            <article class = "temp-icon">             
-              <img class="icon" alt="">
+            <p class="weather-status"></p>
+            <article class="temp-icon">
+              <img class="icon" alt="" />
             </article>
             <div class="change">
-            <article class="far-scale">
-              <div id="switchF"></div>
-              <button id="degrees" class=" button btn-success btn-round">
-                Switch to °F
-              </button>
-            </article>
-          </div>
+              <article class="far-scale">
+                <div id="switchF"></div>
+                <button id="degrees" class=" button btn-success btn-round">
+                  Switch to °F
+                </button>
+              </article>
+            </div>
           </div>
           <div class="more-info">
             <p></p>
@@ -76,5 +83,10 @@
       </div>
     </div>
   </body>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  
   <script src="./main.js"></script>
 </html>

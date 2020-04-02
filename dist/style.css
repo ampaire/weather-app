@@ -5,12 +5,17 @@
 }
 body {
   /* background-color: coral; */
-  background-image: linear-gradient(to top, rgba(0, 0, 0 ,0.6), rgba(0, 0, 0, 0.1) );
+  /* background-image: linear-gradient(to top, rgba(250, 233, 76, 0.6), rgba(0, 0, 0, 0.1) ); */
   overflow: hidden;
   width: 100vw;
   height: 100vh;
   font-family: monospace;
   padding: 10px;
+}
+
+.section {
+  height: inherit;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .section {
@@ -33,7 +38,7 @@ body {
 }
 
 .button {
-  background: black;
+  background: transparent;
   margin: 2px;
   padding: 7px;
   outline: none;
@@ -54,13 +59,19 @@ body {
 }
 
 #weather-forecast.show {
+  color: aliceblue;
   margin-top: 12%;
+  text-align: center;
+  font-size: 20px;
   display: flex;
   margin: 0 auto;
   border-radius: 20px;
-  width: 30vw;
+  width: 60vw;
   height: 60vh;
-  background-color: rgb(247, 236, 232);
+}
+
+#weather-forecast *{
+  padding: 3px;
 }
 
 .main-temp {
@@ -75,9 +86,13 @@ body {
   align-items: center;
 }
 
-.weather-icon {
+.icon {
   width: 5vw;
-  background-color: cornflowerblue;
+  background-color: rgb(87, 145, 252);
+}
+
+.temp-icon {
+  text-align: center;
 }
 
 .location {
