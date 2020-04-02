@@ -1,21 +1,23 @@
 # weather-app [Microverse](https://www.microverse.org/)
 
-# TODO-LIST
+![screenshot](docs/weather.png)
 
-![screenshot](todo.png)
-
-The main purpose of this project is to make an implemantation of a Todo list. The users of this application can create projects, add tasks under the projects, delete the projects, update/ edit their tasks and mark a task as done or not done. This application will help users to organise their tasks and projects. This is part of the [Ordin projects](https://www.theodinproject.com/courses/javascript/lessons/todo-list) from the [microverse](https://www.microverse.org/)  Javascript curriculum.
+The main purpose of this project is to create a weather app where users type in their cities, states and countries and the weather information of the location is returned to them. This is part of the [Ordin projects](https://www.theodinproject.com/courses/javascript/lessons/weather-app) from the [microverse](https://www.microverse.org/)  Javascript curriculum.
 
 ## Features
-- A user can add a project
-- A user can delete a project
-- a user can create a new task under a selected project
-- A user can update the status of a task to done if it is finished or not done if it is not yet finished
-- A user can edit the Task incase of errors or change of mind
-- A user can delete a task from the project array
+- A user enters a city
+- Data in form of the weather, current temperature is returned to the user
+- A user can change the metrics of the weather returned from Celcius to Fahrenheit and Fahrenheit to Celsius..
+- An image of the city that the user checked for is returned in the background
 
 ## Live link
-[TODO_LIST](https://rawcdn.githack.com/Tresor11/TODO-LIST/22e07226da864e479aa021c5b744642fa68869f3/dist/index.html)
+[Weather App](https://rawcdn.githack.com/ampaire/weather-app/c7f6514c1c9ecc798418f4c115e4ec49e7dfbb49/dist/index.html)
+
+## Built with
+- Html and Css
+- Javascript
+- [Open Weather Api](https://openweathermap.org/api) for returning the weather information of the different cities
+- [Flickr](https://www.flickr.com/services/api/) for displaying the background pictures of different cities
 
 ## Prerequisites
 To comfortably use this project, prior knowledge of the following is ideal
@@ -29,7 +31,7 @@ To comfortably use this project, prior knowledge of the following is ideal
 ### Setup
 Run 
 ~~~ 
-$git clone https://github.com/Tresor11/TODO_LIST.git 
+$git clone https://github.com/ampaire/weather-app.git 
 ~~~
 to clone this project to your local machine and then we get started.
 
@@ -42,10 +44,6 @@ to install all the libraries that were used for this project.
 You can then run the project in the live server if you have it installed in your code editor or by simply running the index.html page in the browser.
 
 ## Engineers
-👤 **Tresor**
-
-- Github: [@Tresor11](https://github.com/Tresor11)
-
 👤 **Phemia**
 
 - Github: [@ampaire](https://github.com/ampaire)
@@ -57,11 +55,11 @@ You can then run the project in the live server if you have it installed in your
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Tresor11/TODO-LIST/issues).
+Feel free to check the [issues page](https://github.com/ampaire/weather-app/issues).
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
-- [Ordin](https://www.theodinproject.com/courses/javascript/lessons/todo-list)
+- [Ordin Lessons](https://www.theodinproject.com/courses/javascript/lessons/weather-app)
