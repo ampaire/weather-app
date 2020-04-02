@@ -4,13 +4,17 @@
   box-sizing: border-box;
 }
 body {
-  /* background-color: coral; */
-  /* background-image: linear-gradient(to top, rgba(250, 233, 76, 0.6), rgba(0, 0, 0, 0.1) ); */
+  background-color: coral;
+  background-image: linear-gradient(to top, rgba(44, 33, 31, 0.6), rgba(0, 0, 0, 0.1) );
   overflow: hidden;
   width: 100vw;
   height: 100vh;
   font-family: monospace;
   padding: 10px;
+}
+
+h3 {
+  font-size: 40px;
 }
 
 .backgroundImg img{
@@ -83,9 +87,8 @@ body {
 
 .main-temp {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 30px;
   font-weight: 600;
-  text-shadow: yellow 10px;
 }
 .change {
   display: flex;
@@ -103,7 +106,7 @@ body {
 
 .location {
   font-family: fantasy;
-  font-size: 1.32rem;
+  font-size: 30px;
   text-align: center;
-  font-weight: 600;
+  font-weight: bold;
 }
