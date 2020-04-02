@@ -13,9 +13,15 @@ body {
   padding: 10px;
 }
 
+.backgroundImg img{
+  background-size: cover;
+  position: absolute;
+  display: none;
+}
 .section {
   height: inherit;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
+  position: relative;
 }
 
 .section {
@@ -88,7 +94,6 @@ body {
 
 .icon {
   width: 5vw;
-  background-color: rgb(87, 145, 252);
 }
 
 .temp-icon {

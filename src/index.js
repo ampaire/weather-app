@@ -10,7 +10,7 @@ searchForm.addEventListener('submit', event => {
 
 
   let data = {};
-  const currentCity = checkCity.value; 
+  const currentCity = checkCity.value;
   const metricURL = `https://api.openweathermap.org/data/2.5/weather?q=${currentCity}&appid=${apiKey}&units=metric`;
   const fehrenhitURL = `https://api.openweathermap.org/data/2.5/weather?q=${currentCity}&appid=${apiKey}&units=imperial`;
   fetch(metricURL, { mode: 'cors' })
@@ -28,5 +28,5 @@ searchForm.addEventListener('submit', event => {
   errorMessage.textContent = '';
   searchForm.reset();
   checkCity.focus();
-  document.body.backgroundImage = selectImage(currentCity);
+  selectImage(currentCity);
 });
