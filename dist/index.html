@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="./style.css" rel="stylesheet" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="section">
+      <nav id="navbar" class="navbar d-flex justify-content-center mb-4">
+        <div class="navbar-item">
+          <div>
+            <h3 class="title text-center text-white mt-4">Weather APP</h3>
+          </div>
+        </div>
+      </nav>
+      <div class="section-item rows ml-3  d-flex justify-content-center">
+        <div class="row">
+          <div class="needed d-flex justify-content-center">
+            <form class="control" id="form-control">
+              <input
+                id="cityInput"
+                class="inputCity mb-3"
+                type="text"
+                placeholder="Enter city..."
+              />
+              <button type="submit" class="check-city btn-success mt-4 button">
+                <a id="city">CHECK WEATHER</a>
+              </button>
+            </form>
+            <span id="warn" class="err-city text-white"></span>
+          </div>
+        </div>
+      </div>
+      <div id="weather-forecast" class="section-item weather mt-4 p-4">
+        <div class="field" id="temp-field">
+          <div class="location" id="term">
+            <span class="city-name"></span>
+            <span class="country-name"></span>
+          </div>
+          <p class="main-temp"></p>
+          <div class="date"></div>
+          <div class="temperature">
+            <p class="weather-status"></p>
+            <article class="temp-icon">
+              <img class="icon" alt="" />
+            </article>
+            <div class="change">
+              <article class="far-scale">
+                <div id="switchF"></div>
+                <button id="degrees" class=" button btn-success btn-round">
+                  Switch to °F
+                </button>
+              </article>
+            </div>
+          </div>
+          <div class="more-info">
+            <p></p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="./main.js"></script>
+</html>
