@@ -18,9 +18,13 @@ searchForm.addEventListener('submit', event => {
   Promise.all([
     fetchWeather(currentCity, 'metric'),
     fetchWeather(currentCity, 'imperial'),
-  ]).then(([celsiusData, FahrenheitData]) => {
-    updateDOM(parseJSON(celsiusData), parseJSON(FahrenheitData).tempF);
-  });
+  ])
+    .then(([celsiusData, FahrenheitData]) => {
+      updateDOM(parseJSON(celsiusData), parseJSON(FahrenheitData).temp);
+    })
+    .catch(() => {
+      errorMessage.textContent = "I Couldn't fetch weather for this city 😩.";
+    });
   errorMessage.textContent = '';
   searchForm.reset();
   checkCity.focus();
