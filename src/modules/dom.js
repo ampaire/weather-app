@@ -63,7 +63,7 @@ export const selectImage = (cityName) => {
   const script = document.createElement('script');
   script.src = `https://api.flickr.com/services/feeds/photos_public.gne?format=json&jsoncallback=abc&tags=${cityName}`;
   document.head.appendChild(script);
-  window.abc = function abc(data) {
+  window.abc = abc(data) {
     const body = document.querySelector('body');
     body.style.background = `url('${data.items[3].media.m}') no-repeat`;
     body.style.backgroundSize = 'cover';
