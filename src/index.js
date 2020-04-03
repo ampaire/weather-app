@@ -15,11 +15,11 @@ searchForm.addEventListener('submit', event => {
   const fehrenhitURL = `https://api.openweathermap.org/data/2.5/weather?q=${currentCity}&appid=${apiKey}&units=imperial`;
   fetch(metricURL, { mode: 'cors' })
     .then(response => response.json())
-    .then(json => parseJSON(json))
+    .then(parseJSON)
     .then(dataMetric => { data = dataMetric; })
     .then(() => fetch(fehrenhitURL))
     .then(response => response.json())
-    .then(json => parseJSON(json))
+    .then(parseJSON)
     .then(dataImperial => dataImperial.temp)
     .then(tempF => updateDOM(data, tempF))
     .catch(() => {
