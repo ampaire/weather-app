@@ -20,8 +20,7 @@ searchForm.addEventListener('submit', event => {
     .then(() => fetch(fehrenhitURL))
     .then(response => response.json())
     .then(parseJSON)
-    .then(dataImperial => dataImperial.temp)
-    .then(tempF => updateDOM(data, tempF))
+    .then(({ temp }) => updateDOM(data, temp))
     .catch(() => {
       errorMessage.textContent = 'I Couldn\'t fetch weather for this city 😩.';
     });

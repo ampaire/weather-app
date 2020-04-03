@@ -65,7 +65,7 @@ export const selectImage = (cityName) => {
   document.head.appendChild(script);
   window.abc = function abc(data) {
     const body = document.querySelector('body');
-    body.style.background = `url('${data.items[3].media.m}') no-repeat`;
+    body.style.background = `url('${data.items[2].media.m}') no-repeat`;
     body.style.backgroundSize = 'cover';
   };
 };
