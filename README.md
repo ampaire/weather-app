@@ -1,4 +1,4 @@
-# weather-app - [Microverse Projects](https://www.microverse.org/)
+# weather-app
 
 ![screenshot](docs/weather.png)
 
@@ -21,9 +21,9 @@ The main purpose of this project is to create a weather app where users type in 
 
 ## Prerequisites
 To comfortably use this project, prior knowledge of the following is ideal
-- Html and Css
+- HTML and CSS
 - Javascript
-- Eslint
+- ESlint
 - Bootstrap 4
 - Webpack
 - Local storage
