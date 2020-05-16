@@ -18,7 +18,7 @@ The main purpose of this project is to create a weather app where users type in 
 - [Open Weather API](https://openweathermap.org/api) for returning the weather information of the different cities
 - [Flickr API](https://www.flickr.com/services/api/) for displaying the background pictures of different cities
 
-## Prerequisites
+## PREREQUISITES
 To comfortably use this project, prior knowledge of the following is ideal
 - HTML and CSS
 - JavaScript
@@ -27,7 +27,7 @@ To comfortably use this project, prior knowledge of the following is ideal
 - Webpack
 - Local storage
 
-### Setup
+### SETUP
 Run 
 ~~~ 
 $git clone https://github.com/ampaire/weather-app.git 
@@ -42,7 +42,7 @@ to install all the libraries that were used for this project.
 
 You can then run the project in the live server if you have it installed in your code editor or by simply running the index.html page in the browser.
 
-## Engineers
+## AUTHOR
 👤 **Phemia**
 
 - Github: [@ampaire](https://github.com/ampaire)
@@ -50,15 +50,17 @@ You can then run the project in the live server if you have it installed in your
 - Linkedin: [linkedin](https://linkedin.com/ampaire-phemia)
 
 
-## 🤝 Contributing
+## 🤝 CONTRIBUTING
 
 Contributions, issues and feature requests are welcome!
 
 Feel free to check the [issues page](https://github.com/ampaire/weather-app/issues) for issues and suggestions.
 
-## Show your support
+## SHOW SUPPORT
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
+## ACKNOWLEDGEMENTS
 - [Ordin Lessons](https://www.theodinproject.com/courses/javascript/lessons/weather-app)
+- [Open Weather API](https://openweathermap.org/api) for returning the weather information of the different cities
+- [Flickr API](https://www.flickr.com/services/api/) for displaying the background pictures of different cities
