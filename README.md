@@ -1,4 +1,4 @@
-# weather-app
+# WEATHER APP
 
 ![screenshot](docs/weather.png)
 
