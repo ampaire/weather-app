@@ -4,25 +4,24 @@
 
 The main purpose of this project is to create a weather app where users type in their cities, states and countries and the weather information of the location is returned to them. This is part of the [Ordin projects](https://www.theodinproject.com/courses/javascript/lessons/weather-app) from the [microverse](https://www.microverse.org/)  Javascript curriculum.
 
-## Features
+## FEATURES
 - A user enters a city
 - Data in form of the weather, current temperature is returned to the user
 - A user can change the metrics of the weather returned from Celcius to Fahrenheit and Fahrenheit to Celsius..
 - An image of the city that the user checked for is returned in the background
 
-## Live link
-[Weather App](https://rawcdn.githack.com/ampaire/weather-app/7a6d585b71809de16913bcff25cbf0c53a53fcc7/dist/index.html)
+## [DEMO LINK](https://rawcdn.githack.com/ampaire/weather-app/7a6d585b71809de16913bcff25cbf0c53a53fcc7/dist/index.html)
 
-## Built with
-- Html and Css
-- Javascript
+## BUILT WITH
+- HTML and CSS
+- JavaScript
 - [Open Weather API](https://openweathermap.org/api) for returning the weather information of the different cities
 - [Flickr API](https://www.flickr.com/services/api/) for displaying the background pictures of different cities
 
 ## Prerequisites
 To comfortably use this project, prior knowledge of the following is ideal
 - HTML and CSS
-- Javascript
+- JavaScript
 - ESlint
 - Bootstrap 4
 - Webpack
@@ -55,7 +54,7 @@ You can then run the project in the live server if you have it installed in your
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/ampaire/weather-app/issues).
+Feel free to check the [issues page](https://github.com/ampaire/weather-app/issues) for issues and suggestions.
 
 ## Show your support
 
