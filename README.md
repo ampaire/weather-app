@@ -16,8 +16,8 @@ The main purpose of this project is to create a weather app where users type in 
 ## Built with
 - Html and Css
 - Javascript
-- [Open Weather Api](https://openweathermap.org/api) for returning the weather information of the different cities
-- [Flickr](https://www.flickr.com/services/api/) for displaying the background pictures of different cities
+- [Open Weather API](https://openweathermap.org/api) for returning the weather information of the different cities
+- [Flickr API](https://www.flickr.com/services/api/) for displaying the background pictures of different cities
 
 ## Prerequisites
 To comfortably use this project, prior knowledge of the following is ideal
